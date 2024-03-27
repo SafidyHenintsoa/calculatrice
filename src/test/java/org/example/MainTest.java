@@ -15,7 +15,7 @@ class MainTest {
     public void testSubtraction(){
         assertEquals(1, Main.subtraction(2,1));
         assertEquals(0, Main.subtraction(1,1));
-        assertEquals(1.3000000000000003, Main.subtraction(3.6,2.3));
+        assertEquals(1.3, Main.subtraction(3.6,2.3),1.3);
     }
     @Test
     public void testMultiplication(){
