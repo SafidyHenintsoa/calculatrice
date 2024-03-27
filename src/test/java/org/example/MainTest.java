@@ -25,5 +25,6 @@ class MainTest {
     public void testDivision(){
         assertEquals(2, Main.division(6,3));
         assertEquals(Double.POSITIVE_INFINITY, Main.division(6,0));
+        assertEquals(Double.NEGATIVE_INFINITY, Main.division(-6,0));
     }
 }

@@ -15,9 +15,12 @@ public class Main {
         return a * b;
     }
     public static double division(double a, double b) {
-        if (b == 0) {
+        if (b == 0 && a > 0) {
             double positiveInfinity = Double.POSITIVE_INFINITY;
             return positiveInfinity;
+        }else if(b == 0 && a < 0) {
+            double negativeInfinity = Double.NEGATIVE_INFINITY;
+            return negativeInfinity;
         }else {
             return a / b;
         }
